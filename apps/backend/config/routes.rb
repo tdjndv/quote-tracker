@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   post "/api/quotes", to: "api/quotes#create"
   patch "/api/quotes/:id", to: "api/quotes#update"
   delete "/api/quotes/:id", to: "api/quotes#destroy"
+
+  get "/api/public/quotes", to: "api/public_quotes#index"
 end
